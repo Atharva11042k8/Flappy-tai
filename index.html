@@ -111,7 +111,7 @@ var top_max_height = 70;
 
 function fly(){
     if(alive === true){
-        flySpeed = flySpeed +0.01;
+        flySpeed = flySpeed -0.01;
         $("player").style.transition = "all 0.5s";
         $("player").style.top=$("player").offsetTop - window.innerHeight/10 - aditionalJump + "px";
         clearInterval(gravity);
